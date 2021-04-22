@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.fusesource.jansi:jansi:2.3.2'
 }
 
 application {
