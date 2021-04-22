@@ -43,7 +43,7 @@ public class ChessGame {
       Location tmpLocation = Location.of(command);
 
       if (tmpLocation == null) {
-        out("Invalid location entered.");
+        out("Invalid location entered. Locations are [Letter][Number] i.e. a1");
         continue;
       }
       if (selectedLocation == null) {

@@ -7,14 +7,14 @@
 out () {
   clear
   echo "$1"
-  echo "-------------------"
+  echo "-------------------------------------------------------------"
   echo ""
 }
 
 out "Pulling Latest Code"
 git pull
 chmod +x ./gradlew
-out "Building"
-./gradlew build
+out "Building... This will take a moment, ignore everything below."
+./gradlew -Dorg.gradle.internal.launcher.welcomeMessageEnabled=false -q build
 out "Done. Running."
 ./gradlew --console=plain -q run

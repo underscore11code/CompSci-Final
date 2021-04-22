@@ -24,7 +24,12 @@ public class Location {
     char rawX = rawIn.charAt(0);
     char rawY = rawIn.charAt(1);
 
-    final int y = Integer.parseInt(String.valueOf(rawY));
+    final int y;
+    try {
+      y = Integer.parseInt(String.valueOf(rawY));
+    } catch (NumberFormatException e) {
+      return null;
+    }
 
     try {
       return of(rawX, y);
