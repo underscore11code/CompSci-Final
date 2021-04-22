@@ -46,15 +46,15 @@ public class BoardState {
     pieces.put(Location.of(0, 7), new Rook(Side.BLACK));
     pieces.put(Location.of(7, 7), new Rook(Side.BLACK));
 
-    pieces.put(Location.of(1, 0), new Bishop(Side.WHITE));
-    pieces.put(Location.of(6, 0), new Bishop(Side.WHITE));
-    pieces.put(Location.of(1, 7), new Bishop(Side.BLACK));
-    pieces.put(Location.of(6, 7), new Bishop(Side.BLACK));
+    pieces.put(Location.of(1, 0), new Horse(Side.WHITE));
+    pieces.put(Location.of(6, 0), new Horse(Side.WHITE));
+    pieces.put(Location.of(1, 7), new Horse(Side.BLACK));
+    pieces.put(Location.of(6, 7), new Horse(Side.BLACK));
 
-    pieces.put(Location.of(2, 0), new Horse(Side.WHITE));
-    pieces.put(Location.of(5, 0), new Horse(Side.WHITE));
-    pieces.put(Location.of(2, 7), new Horse(Side.BLACK));
-    pieces.put(Location.of(5, 7), new Horse(Side.BLACK));
+    pieces.put(Location.of(2, 0), new Bishop(Side.WHITE));
+    pieces.put(Location.of(5, 0), new Bishop(Side.WHITE));
+    pieces.put(Location.of(2, 7), new Bishop(Side.BLACK));
+    pieces.put(Location.of(5, 7), new Bishop(Side.BLACK));
 
     pieces.put(Location.of(3, 0), new Queen(Side.WHITE));
     pieces.put(Location.of(3, 7), new Queen(Side.BLACK));
