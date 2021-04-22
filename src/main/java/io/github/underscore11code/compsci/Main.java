@@ -18,6 +18,7 @@ public class Main {
       System.out.println(ansi().fgBrightGreen().a("Welcome to Chess!").reset());
       System.out.println("Pieces are represented by the first letter of their name (Knights are \"H\" since King takes \"K\").");
       System.out.println("To move, you will be prompted first for the location of which piece you wish to move, then where to move it.");
+      System.out.println("For instance, to move the piece at a1 to a3, you would first type \"a1\", then \"a3\" (separate lines)");
       System.out.println("Please note that \"castling\" is not possible. Sorry advanced players.");
       System.out.println();
 
